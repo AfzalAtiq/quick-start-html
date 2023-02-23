@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A Emojis and Java scripit </title>
+    <link rel="stylesheet" href="mystyle.css">
+    <meta charset="UTF-8">
+  </head>
+  <style>
+    body {background-color: powderblue;}
+    h1 {color: rgb(255, 17, 0);}
+    p {color: blue;}
+  </style>
+<body>
+<h2>HTML Iframes</h2>
+<p>You can use the height and width attributes to specify the size of the iframe:</p>
+<iframe src="afzal.jpg"  height="200" width="300" title="Iframe Example"></iframe>
+<h1>My First JavaScript</h1>
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+<p>JavaScript  change the content of an HTML element:</p>
+
+<button type="button" onclick="contentFunction()">Click Here To Change The Content!</button>
+
+<p id="demo">This is a demonstration.</p>
+
+<script>
+function contentFunction() { 
+  document.getElementById("demo").innerHTML = "Hello JavaScript!";
+}
+</script>
+<p id="demo">JavaScript  change the style of an HTML element.</p>
+
+<script>
+function fontFunction() {
+  document.getElementById("demo").style.fontSize = "25px"; 
+  document.getElementById("demo").style.color = "white";
+  document.getElementById("demo").style.backgroundColor = "black";        
+}
+</script>
+<button type="button" onclick="fontFunction()">Click Here To Font!</button>
+<script>
+    function light(sw) {
+      var pic;
+      if (sw == 0) {
+        pic = "pic_bulboff.gif"
+      } 
+      else {
+        pic = "pic_bulbon.gif"
+      }
+      document.getElementById('myImage').src = pic;
+    }
+    </script>
+    <p>
+    <img id="myImage" src="pic_bulboff.gif" width="120" height="180">
+    <button type="button" onclick="light(1)">"light On"</button>
+    <button type="button" onclick="light(0)">"light Off"</button>
+    </p>
+    <p>The content of the body element is displayed in the browser window.</p>
+    <p>The content of the title element is displayed in the browser tab, in favorites and in search-engine results.</p>
+    <h1>My Emoji</h1>
+<p>&#128512;</p>
+<h1>Sized Emojis</h1>
+<p style="font-size:48px">
+&#128512; &#128516; &#128525; &#128151;
+</p>
+<p style="font-size:48px">
+&#128507;
+</p>
+<h1>HTML Entity Example</h1>
+<h2> The black-diamond symbol: &diams;</h2>
+<h2>The black-heart symbol: &hearts;</h2>
+</body>
+</html>
